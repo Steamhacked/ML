@@ -10,3 +10,5 @@ PCA:
   5) Find PC2 -> Perpendicular to PC1 (4)
 
 
+PCA Using Linear Algebra:
+  1)
