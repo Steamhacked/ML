@@ -7,5 +7,7 @@ Training Autoencoder:
   Add Regularization to penalize the two being too similar
 Optimal Autoencoder will be sensitive enough to properly reconstruct data, but insensitive enough to prevent overfitting
 
-Autoencoder is equivalent to PCA if linear activation functions are used
+Autoencoder is equivalent to PCA if linear activation functions are used (although, Autoencoder capable of learning non-linear relationship)
+
+Applied in: Dimensionality Reduction, Denoising, Genaration, etc.
 
