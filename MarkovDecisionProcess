@@ -1,0 +1,23 @@
+MDP is defined by: set of states S, set of actions A, transition function T(s,a,s'), reward function R(s,a,s'), start state, possibly terminal state.
+Goal of MDP is to maximize the sum of rewards
+
+Utility - long-term reward
+
+Nonation:
+
+Pi(s) - policy, mapping states to actions (which action to take depending on the state)
+V^pi(s) - expected utility of starting at state s and acting based on pi thereafter
+Q^pi(s,a) - expected utility of starting at state s, taking action a and acting based on pi thereafter
+
+Pi*(s) - optimal policy
+V*(s) - expected utility of starting at state s and acting optimally thereafter
+Q*(s,a) - expected utility of starting at state s, taking action a and acting optimally thereafter
+
+Value Iteration Algorithm:
+  1) Start with V*_0(s) = 0 for all s in S
+  2) Given V*_i calculate values for all states s in S:
+    V*_i+1 = max a, Sum across (s') [T(s,a,s')*(R(s,a,s')+gammaV*_i(s')]
+  3) Repeat (2) until convergence (V_i+1(s) is nearly V_i(s) for all states)
+
+
+
